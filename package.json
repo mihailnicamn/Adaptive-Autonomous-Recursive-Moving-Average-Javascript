@@ -6,10 +6,18 @@
   "scripts": {
     "test": "node test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihailnicamn/Adaptive-Autonomous-Recursive-Moving-Average-Javascript.git"
+  },
   "keywords": [
     "technical-analysis",
-    "moving-averages"
+    "moving-average"
   ],
-  "author": "o-s",
-  "license": "ISC"
+  "author": "mihailnicamn, alexgrover",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihailnicamn/Adaptive-Autonomous-Recursive-Moving-Average-Javascript/issues"
+  },
+  "homepage": "https://github.com/mihailnicamn/Adaptive-Autonomous-Recursive-Moving-Average-Javascript#readme"
 }
