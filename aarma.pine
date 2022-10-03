@@ -1,0 +1,16 @@
+//@version=4
+//(c)https://www.tradingview.com/u/alexgrover/
+study("Adaptive Autonomous Recursive Moving Average",shorttitle="A2RMA",overlay=true)
+length = input(14),gamma = input(3.),src = input(close)
+//----
+er = abs(change(src,length))/sum(abs(change(src)),length)
+ama(x)=>
+    a = 0.
+    a := er*x+(1-er)*nz(a[1],x)
+//----
+ma = 0.
+d = cum(abs(src - nz(ma[1],src)))/bar_index * gamma
+ma := ama(ama(src > nz(ma[1],src) + d ? src + d : src < nz(ma[1],src) - d ? src - d : nz(ma[1],src)))
+//----
+css = ma > ma[1] ? #2196f3 : ma < ma[1] ? #ff1100 : na
+plot(ma,color=fixnan(css),linewidth=2,transp=0)

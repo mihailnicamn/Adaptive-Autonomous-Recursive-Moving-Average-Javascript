@@ -1,0 +1,15 @@
+{
+  "name": "adaptive-autonomous-recursive-moving-average-javascript",
+  "version": "1.0.0",
+  "description": "an adaptation of \"Adaptive Autonomous Recursive Moving Average\" from tradingview in js",
+  "main": "aarma.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "technical-analysis",
+    "moving-averages"
+  ],
+  "author": "o-s",
+  "license": "ISC"
+}
