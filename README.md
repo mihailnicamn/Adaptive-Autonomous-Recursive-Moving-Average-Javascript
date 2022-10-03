@@ -4,6 +4,7 @@
 
 ## Usage repo
 > git clone https://github.com/mihailnicamn/Adaptive-Autonomous-Recursive-Moving-Average-Javascript.git
+
 > node test.js
 
 
